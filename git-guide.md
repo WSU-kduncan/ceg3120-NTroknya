@@ -7,6 +7,8 @@
 		- list of files in local folder that have changes that need to be committed
 	- `git status`
 - clone
+	- How you get the repository from the GitHub website to your local machine.
+	- `git clone "whatever_the_url_from_github_is"`
 - add
 - rm
 - commit
