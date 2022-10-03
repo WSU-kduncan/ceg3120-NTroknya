@@ -6,29 +6,16 @@
 For each step below, provide a screenshot that shows the network resource has been created according to specification along with a description of what the resource does (what is its role). You may add whatever additional notes you would like. **The screenshot and description of each network component is required**. Any other notes you leave behind may make this project more useful in the future. Getting a good screenshot can be done by clicking on the resource and showing configurations in the details menu.
 
 1. Create a VPC.
-   - Tag it with "YOURLASTNAME-VPC"
-   - Specify a /24 private IP address range
+   - A digital network only accessible to your AWS (if formatted right)
+   - 
 2. Create a subnet
-   - Tag it with "YOURLASTNAME-Subnet"
-   - Specify a /28 private IP address range
-   - Attach it to your VPC
+   - A range of available IP addresses in your VPC
 3. Create an internet gateway
-   - Tag it with "YOURLASTNAME-gw"
-   - Attach it to your VPC
+   - Allows access to the VPC through external sources (like SSH) and allows outbund traffic from the VPC
 4. Create a route table
-   - Tag it with "YOURLASTNAME-routetable"
-   - Attach it to your VPC
-   - Associate it with your subnet
-   - Add a routing table rule that sends traffic to all destinations to your internet gateway
+   - Set of rules to determine how traffic to/from the subnet will traVEL
 5. Create a security group
-   - Tag it with "YOURLASTNAME-sg"
-   - Allow SSH for a set of trusted networks including:
-     - Your home / where you usually connect to your instances from
-     - Wright State (addresses starting with 130.108)
-     - Instances within the VPC
-   - Attach it to your VPC
-   - Image should include your Inbound rules
-6. (If necessary, else skip) Create a key pair
+   - Basically the firewall rules
 
 ## Part 2 - EC2 instances
 
