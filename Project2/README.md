@@ -7,19 +7,19 @@ For each step below, provide a screenshot that shows the network resource has be
 
 1. Create a VPC.
    - A digital network only accessible to your AWS (if formatted right)
-   - ![VPC](../images/VPC creation.png)
+   - ![VPC](../images/VPCcreation.png)
 2. Create a subnet
    - A range of available IP addresses in your VPC
-   - ![Subnet](../images/Subnet creation.png)
+   - ![Subnet](../images/Subnetcreation.png)
 3. Create an internet gateway
    - Allows access to the VPC through external sources (like SSH) and allows outbund traffic from the VPC
-   - ![Internet Gateway](../images/gateway creation.png)
+   - ![Internet Gateway](../images/gatewaycreation.png)
 4. Create a route table
    - Set of rules to determine how traffic to/from the subnet will travel
-   - ![Route Table](../images/routetable creation.png)
+   - ![Route Table](../images/routetablecreation.png)
 5. Create a security group
    - Basically the firewall rules
-   - ![Security Groups](../images/securitygroup creation.png)
+   - ![Security Groups](../images/securitygroupcreation.png)
 
 ## Part 2 - EC2 instances
 
