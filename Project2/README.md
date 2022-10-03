@@ -45,3 +45,4 @@ For each step below, provide a screenshot that shows the network resource has be
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
    - Used the `hostnamectl` command with `sudo` privilages and the `set-hostname` tag.
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
+   ![SSH with new hostname](images/sshedwithNewHost.png)
