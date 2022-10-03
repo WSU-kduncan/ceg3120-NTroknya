@@ -7,19 +7,19 @@ For each step below, provide a screenshot that shows the network resource has be
 
 1. Create a VPC.
    - A digital network only accessible to your AWS (if formatted right)
-   ![VPC](Project2/images/VPCcreation.png)
+   ![VPC](images/VPCcreation.png)
 2. Create a subnet
    - A range of available IP addresses in your VPC
-   ![Subnet](Project2/images/Subnetcreation.png)
+   ![Subnet](images/Subnetcreation.png)
 3. Create an internet gateway
    - Allows access to the VPC through external sources (like SSH) and allows outbund traffic from the VPC
-   ![Internet Gateway](Project2/images/gatewaycreation.png)
+   ![Internet Gateway](images/gatewaycreation.png)
 4. Create a route table
    - Set of rules to determine how traffic to/from the subnet will travel
-   ![Route Table](Project2/images/routetablecreation.png)
+   ![Route Table](images/routetablecreation.png)
 5. Create a security group
    - Basically the firewall rules
-   ![Security Groups](Project2/images/securitygroupcreation.png)
+   ![Security Groups](images/securitygroupcreation.png)
 
 ## Part 2 - EC2 instances
 
@@ -41,7 +41,7 @@ For each step below, provide a screenshot that shows the network resource has be
    - Used the `ElasricIP`tab in the `EC2` section of AWS to reserve the IP, then used the dropdown box to select `Associate Elastic` 
    - `IP Address` and filled in the boxes with the instance information
 10. Create a screenshot your instance details and add it to your project write up. Example below:
-   ![instance details](Project2/images/InstanceCreation.png)
+   ![instance details](images/InstanceCreation.png)
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
    1. It is wise to copy config files you are about to change to filename.old For `/etc/hostname`, for example, I would first copy the current `hostname` file to `/etc/hostname.old`
    2. You should not change permissions on any files you are modifying. They are system config files. You may need to access them with administrative privileges.
