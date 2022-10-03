@@ -25,16 +25,22 @@ For each step below, provide a screenshot that shows the network resource has be
 
 1. Create a new instance. Give a write up of the following information:
    - AMI selected
-     - default username of the instance type selected
-   - Instance type selected
-2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
+     - ubuntu
+   - Ubuntu 22.04
+2. Attach the instance to your VPC. 
+   - Went deeper into the Network settings tab by hitting the `edit` button and changed the VPC using the dropdown box
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
-   - **NOTE** - in the next few steps, you will be required to request an Elastic IP address and associate it to the instance. Factor that in to your discussion here.
+   - Disabled, that was the default and I wanted to manually do so, just in case I screwed something up along the way.
 4. Attach a volume to your instance. As discussed there are different pathways to doing this. Say how you did it.
+   - It was a part of the drop down boxes, so I added the autofilled 8GiB volume.
 5. Tag your instance with a "Name" of "YOURLASTNAME-instance". Say how you did it.
+   - Filled in the box that was under the `Names and tags` heading while creating the instance
 6. Associate your security group, "YOURLASTNAME-sg" to your instance. Say how you did it.
-7. Reserve an Elastic IP address. Tag it with "YOURLASTNAME-EIP". Associate the Elastic IP with your instance. Say how you did it.
-8. Create a screenshot your instance details and add it to your project write up. Example below:
+   - Used the deeper settings to change the VPC and used the associated, i.e. non-default, security group I attached to my VPC
+8. Reserve an Elastic IP address. Tag it with "YOURLASTNAME-EIP". Associate the Elastic IP with your instance. Say how you did it.
+   - Used the `ElasricIP`tab in the `EC2` section of AWS to reserve the IP, then used the dropdown box to select `Associate Elastic` 
+   - `IP Address` and filled in the boxes with the instance information
+10. Create a screenshot your instance details and add it to your project write up. Example below:
    ![sample instance details](sample.png)
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
    1. It is wise to copy config files you are about to change to filename.old For `/etc/hostname`, for example, I would first copy the current `hostname` file to `/etc/hostname.old`
